@@ -1,6 +1,10 @@
 import profile from './image2.jpg';
 import p1 from './p1.PNG';
 import p2 from './p2.PNG';
+// berserk
+import p3 from './p3.JPG';
+// files API
+import p4 from './p4.JPG';
 import Particles from 'react-particles-js';
 import SkillBar from 'react-skillbars';
 import { makeStyles } from '@material-ui/core/styles';
@@ -87,7 +91,7 @@ var skills = [
     }
   },
   {
-    "type": "Python",
+    "type": "Docker",
     "level": 50,
     "color": {
       "bar": "#8771B9",
@@ -110,7 +114,6 @@ const useStyles = makeStyles((theme) => ({
 
 function App() {
   const classes = useStyles();
-  const github = "https://github.com/landaverde15";
   return (
     <div className="containerDesktop containerMobile">
       {/* ------------------------- */}
@@ -135,11 +138,9 @@ function App() {
           </div>
         </div>
         <div className="col socialMedia">
-          <i className="fab fa-instagram"></i>
-          <i className="fab fa-twitter"></i>
-          <i className="fab fa-github" onClick={() => window.open(github, "_blank")}></i>
-          <i className="fab fa-linkedin"></i>
-          <i className="fas fa-paper-plane"></i>
+          <a href="https://www.instagram.com/eazydarce/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
+          <a href="https://github.com/landaverde15" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
+          <a href="mailto:landaverde.erik10@gmail.com"><i className="fas fa-paper-plane"></i></a>
         </div>
       </div>
       {/* -------------------------- */}
@@ -189,7 +190,7 @@ function App() {
               </div>
               <div className="face face2">
                   <div className="content">
-                      <p>I can design a mockup upon request. This is done using professional software like Adobe XD.</p>
+                      <p>Hand-drawn illustrations, wireframes and mockups give you the ability to visualize your platform or integration without a major investment and further validating your approach.</p>
                   </div>
               </div>
             </div>
@@ -204,7 +205,7 @@ function App() {
               </div>
               <div className="face face2">
                   <div className="content">
-                      <p>If you have an idea I can make it a reality. Send over your ideas and I can develop it!</p>
+                      <p>Experienced in building complex, scalable and reliable systems for all company sizes.</p>
                   </div>
               </div>
             </div>
@@ -219,7 +220,7 @@ function App() {
               </div>
               <div className="face face2">
                   <div className="content">
-                      <p>If you need help launching an application I can help. Or, if you already have an existing server and need help with setup/management I can help as well.</p>
+                      <p>Experienced in all of the major cloud solution technologies. Rest assured that your systems will scale and meet demands as needed.</p>
                   </div>
               </div>
             </div>
@@ -236,6 +237,27 @@ function App() {
         <div className="row">
           <div className="col">
            <Timeline align="alternate">
+              <TimelineItem>
+                <TimelineOppositeContent>
+                  <Typography variant="body2" color="textSecondary">
+                    December 2020
+                  </Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineDot color="primary" variant="outlined">
+                    <SchoolIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Paper elevation={3} className={classes.paper}>
+                    <Typography variant="h6" component="h1">
+                      Graduate - B.S. Computer Information Technology
+                    </Typography>
+                    <Typography>California State University Northridge</Typography>
+                  </Paper>
+                </TimelineContent>
+              </TimelineItem>
               <TimelineItem>
                 <TimelineOppositeContent>
                   <Typography variant="body2" color="textSecondary">
@@ -267,7 +289,6 @@ function App() {
                   <TimelineDot color="primary">
                     <BusinessCenterIcon />
                   </TimelineDot>
-                  <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
                   <Paper elevation={3} className={classes.paper}>
@@ -275,26 +296,6 @@ function App() {
                       Help Desk Engineer Intern - NKSFB
                     </Typography>
                     <Typography>Los Angeles, CA</Typography>
-                  </Paper>
-                </TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent>
-                  <Typography variant="body2" color="textSecondary">
-                    May 2021
-                  </Typography>
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot color="primary" variant="outlined">
-                    <SchoolIcon />
-                  </TimelineDot>
-                </TimelineSeparator>
-                <TimelineContent>
-                  <Paper elevation={3} className={classes.paper}>
-                    <Typography variant="h6" component="h1">
-                      Graduate - B.S. Computer Information Technology
-                    </Typography>
-                    <Typography>California State University Northridge</Typography>
                   </Paper>
                 </TimelineContent>
               </TimelineItem>
@@ -312,11 +313,46 @@ function App() {
         <div className="row">
           <div className="col oneHalf mobileOneOne">
             <div className="imgSizerContainer">
+              <img className="imgSizer" src={p4}/>
+              <div className="overlayImg">
+                <div className="imgText">
+                  <div className="siteName">
+                    <h3>Files API</h3>
+                    <p>Personal Python (Flask) API project</p>
+                  </div>
+                  <div className="imgLinkDiv">
+                    <a href="https://files-api-jfl6e.ondigitalocean.app/" target="_blank" className="imgLink">Visit Site</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col oneHalf mobileOneOne">
+            <div className="imgSizerContainer">
+              <img className="imgSizer" src={p3}/>
+              <div className="overlayImg">
+                <div className="imgText">
+                  <div className="siteName">
+                    <h3>Berserk Athletic Wear</h3>
+                    <p>Client project built in ReactJS</p>
+                  </div>
+                  <div className="imgLinkDiv">
+                    <a href="https://berserk-hkpca.ondigitalocean.app/" target="_blank" className="imgLink">Visit Site</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div className="row">
+          <div className="col oneHalf mobileOneOne">
+            <div className="imgSizerContainer">
               <img className="imgSizer" src={p1}/>
               <div className="overlayImg">
                 <div className="imgText">
                   <div className="siteName">
                     <h3>Vista Del Puerto Apartments</h3>
+                    <p>Client project done on Wordpress platform</p>
                   </div>
                   <div className="imgLinkDiv">
                     <a href="https://cbhousing.org/vistas-leasing/" target="_blank" className="imgLink">Visit Site</a>
@@ -332,6 +368,7 @@ function App() {
                 <div className="imgText">
                   <div className="siteName">
                     <h3>Mail & More Co.</h3>
+                    <p>Client project done on Wordpress platform</p>
                   </div>
                   <div className="imgLinkDiv">
                     <a href="https://www.mailmoreca.com/" target="_blank" className="imgLink">Visit Site</a>
@@ -340,7 +377,7 @@ function App() {
               </div>
             </div>
           </div>
-        </div>  
+        </div> 
       </div>
     </div>
   );
