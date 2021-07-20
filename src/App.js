@@ -69,7 +69,7 @@ var skills = [
     }
   },
   {
-    "type": "Spring",
+    "type": "Python",
     "level": 50,
     "color": {
       "bar": "#8AB8C3",
