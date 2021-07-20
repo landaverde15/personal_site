@@ -87,7 +87,7 @@ var skills = [
     }
   },
   {
-    "type": "Docker",
+    "type": "Python",
     "level": 50,
     "color": {
       "bar": "#8771B9",
